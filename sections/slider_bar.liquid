@@ -1,0 +1,84 @@
+<!--slider bar-->
+<div class="container-box">
+  {% for block in section.blocks %}
+    <div class="side-bar">
+      {{ block.settings.paragraph }}
+    </div>
+    <div class="bbb"></div>
+  {% endfor %}
+</div>
+{% schema %}
+  {
+    "name": "side",
+    "settings": [],  
+    "blocks":[
+    {
+      "type":"heder",
+       "name":"product",
+       "limit":8,
+       "settings":[
+        {
+          "type": "text",
+          "id": "paragraph",
+          "label": "Title",
+          "default": "Title"
+        }
+      ]
+    }
+  ],
+  "presets": [
+                {
+                  "name":"side",
+                  "category":"custom"
+                }
+            ]
+}
+{% endschema %}
+<style>
+  .container-box{
+    position:relative;
+  }
+  .side-bar{
+    position:absolute;
+    top:50%;
+    left:96%;
+    background:red;
+    color:#fff;
+    font-weight:bold;
+    padding:6px;
+    -webkit-writing-mode: vertical-rl;
+    position:fixed;
+    animation-name: example;
+    animation-duration:3s;
+    animation-iteration-count:infinite;
+  }
+/*   .bbb{
+    width:200px;
+    height:200px;
+    background:lime;
+    display:none;
+    position:absolute;
+    top:0;
+    left:0;
+  } */
+@keyframes example{
+  0%{ padding:8px; }
+  10%{ padding:6px; }
+  20%{ padding:8px; }
+  30%{ padding:6px; }
+  40%{ padding:8px; }
+  50%{ padding:6px; }
+  60%{ padding:8px; }
+  70%{ padding:6px; }
+  80%{ padding:8px; }
+  90%{ padding:6px; }
+  100%{ padding:8px; }
+}
+</style>
+<script>
+  $(document).ready(function(){
+    $('.side-bar').click(function(){
+      $('.bbb').show();
+    });
+  });
+</script>

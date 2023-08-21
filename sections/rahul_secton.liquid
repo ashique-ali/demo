@@ -1,0 +1,180 @@
+ 
+  
+<div class="Success_Stories">
+  <h2>{{ section.settings.journey_success }}</h2>
+  <div class="stories_slider">
+    {% for block in section.blocks %}
+    <div class="Success_Storiesflex">
+      <div class="success_text">
+       <div class="stories_imageflex">
+          <img src="{{ block.settings.stories_image | img_url:''}}" width="173px" >  
+         <div class="stories_text">
+           <h3>{{ block.settings.success_text_name }}</h3>
+           <p>{{ block.settings.success_text_title }}</p>
+         </div>
+       </div>
+        <h4>{{ block.settings.success_text_title1 }}</h4>
+      </div>
+      <div class="success_image">
+        <img src="{{ block.settings.stories_image1 | img_url:''}}" width="100%" >  
+        <img src="{{ block.settings.stories_image2 | img_url:''}}" width="100%" >   
+      </div>
+    </div>
+  {% endfor %}
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Section name",
+    "settings": [
+      {
+      "type": "text",
+      "id": "journey_success",
+      "label": "Heading",
+      "default": "Hello Traya "
+      }
+    ],
+     "blocks": [
+     {
+       "type": "Head",
+       "name": "success stories",
+       "settings": [
+     
+         {
+     "type": "image_picker",
+  	 "id": "stories_image",
+  	 "label": "Logo image"
+     },
+          {
+      "type": "text",
+      "id": "success_text_name",
+      "label": "Heading",
+      "default": "Hello Traya "
+      },
+          {
+      "type": "text",
+      "id": "success_text_title",
+      "label": "Heading",
+      "default": "Hello Traya "
+      },
+          {
+      "type": "text",
+      "id": "success_text_title1",
+      "label": "Heading",
+      "default": "Hello Traya "
+      },
+          {
+     "type": "image_picker",
+  	 "id": "stories_image1",
+  	 "label": "Logo image"
+     }, {
+     "type": "image_picker",
+  	 "id": "stories_image2",
+  	 "label": "Logo image"
+     }
+       ]
+     }
+     ],
+     "presets":[
+  {
+    "name":"Success Stories",
+    "category":"Success Stories slider"
+  }
+  ]
+  }
+{% endschema %}
+
+<style>
+  .Success_Stories h2{
+    font-size: 44px;
+    text-align:center;
+    margin-bottom: 30px;
+    padding-top: 40px;
+  }
+  .stories_slider{
+    padding:48px;
+  }
+  .Success_Storiesflex{
+    display:flex;
+/     flex:1; /
+    justify-content:center;
+    align-item:center;
+  }
+  .success_text{
+    padding:0 15px;
+      width:100%;
+  }
+  .success_text img{
+    border-radius:50%;
+  }
+  .success_text h3{
+    font-size:28px;
+    padding-top:16px;
+    padding-right:16px;
+  }
+  .success_text p{
+    font-size:20px;
+    padding-top:16px;
+    margin-bottom:48px;
+  }
+  .success_text h4{
+    font-size:24px;
+   
+  }
+  h2 h3 h4{
+     color:black;
+  }
+  .success_image{
+    padding-left:24px;
+    width:100%;
+  }
+   @media only screen and (max-width: 767px){
+ .Success_Storiesflex{
+    display:block;
+ }
+  .stories_slider{
+    padding:0px;
+  }
+  .success_text{
+    padding:16px;
+  }
+  .success_text h4{
+    display:none;
+   }
+  .stories_imageflex{
+   display:flex;
+   flex-direction: row-reverse;
+     }
+  .stories_imageflex img{
+    width:110px;
+  }
+  .success_text h3{
+    font-size:19px;
+    margin-bottom:16px;
+    padding:0px;
+  }
+   .success_text p{
+    font-size:11px;
+    padding-top:0px;
+    margin-bottom:0px;
+  }
+  .stories_text{
+    width:100%;
+    order:1;
+  }
+   }
+</style>
+ 
+<script>
+    $(document).ready(function() {
+   $('.stories_slider').slick({
+    dots: true,
+    slidesToShow:1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed:2000,
+    infinite: true,
+   });
+});
+  
+</script>

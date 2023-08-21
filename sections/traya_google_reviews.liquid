@@ -1,0 +1,205 @@
+<!--traya_google_reviews-->
+
+<div class="page-width">
+  {% if section.settings.footer_linklist_title  != blank %}
+    <div class="section_title">
+      <h2 class="reviews_title_with_line"><center>{{ section.settings.footer_linklist_title }}</center></h2>
+    </div>
+  {% endif %}
+  
+  <div class="google_review_slider">
+    {% for block in section.blocks %}
+      <div class="reviews_slider">
+        {% if block.settings.google_slider_logo  != blank %}
+          <div class="google_logo" style="background:{{ block.settings.color }}">
+            <img src="{{ block.settings.google_slider_logo | img_url:'120x45'}}"/>   
+          </div>
+        {% endif %}
+        <div class="slider_body" style="border-radius:10px;">
+          <div class="review_logo">
+            <img src="{{ block.settings.reviews_slider_logo | img_url:'medium'}}"/>   
+            <span class="paragraph_text" style="color:{{ block.settings.color }}">
+              {{ block.settings.text }}
+            </span>
+          </div>
+          <div class="card_paragraph">
+            <p>{{ block.settings.card_text }}</p>
+          </div>
+          <div class="footer">
+            <div class="footer_logo">
+              <img src="{{ block.settings.logo_image2 | img_url:'45x45'}}"/>  
+              <span class="paragraph_text" style="color:{{ block.settings.color }}">{{ block.settings.logo_name }}</span>
+            </div>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "google-reviews-slider",
+    "settings":[
+      {
+        "type": "text",
+        "id": "footer_linklist_title",
+        "label": "Heading",
+        "default": "Quick links"
+      }
+    ],  
+      "blocks":[
+        {
+          "type": "Head",
+          "name": "review_slider",
+          "limit":12,
+          "settings":[
+        {
+          "type": "image_picker",
+          "id": "google_slider_logo",
+          "label": "gallery_image"
+        },
+        {
+          "type": "image_picker",
+          "id": "reviews_slider_logo",
+          "label": "gallery_image"
+        },
+        {
+          "type": "color",
+          "id": "color",
+          "label": "background-color",
+          "default": "#fff"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Heading",
+          "default": "Quick links"
+        },
+        {
+          "type": "text",
+          "id": "card_text",
+          "label": "Heading",
+          "default": "Quick links"
+        },
+        {
+          "type": "image_picker",
+          "id": "logo_image2",
+          "label": "gallery_image"
+        },
+        {
+          "type": "text",
+          "id": "logo_name",
+          "label": "Heading",
+          "default": "Quick links"
+        }
+      ]
+    }
+  ],  
+  "presets":[
+              {
+                "name":"google_reviews_slider",
+                "category":"custom"
+              }
+            ]
+}
+{% endschema %}
+
+<style>
+  .google_review_slider{
+    margin-top:50px;
+    border: 3px solid #A9B699;
+    padding: 20px 0px 20px 0px;
+    box-shadow: 0 4px 8px #00000040;
+    border-radius: 13px;
+  }
+  .slider_body{
+    min-height: 1px;
+    padding: 15px;
+  }
+  .reviews_slider{
+    margin:15px;
+    background:#fff;
+  }
+  .review_logo{
+    display: flex;
+    justify-content: space-between;
+  }
+  .google_logo{
+    background:linear-gradient(0deg, #15427d 20%, #3f89d4 100%);
+    padding:30px;
+  }
+  .google_logo img{
+    margin:auto;
+  }
+  .paragraph_text{
+    color: #3f89d4;
+    font-size: 80%;
+    font-weight: 700;
+  }
+  .footer_logo img{
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    object-fit: cover;
+  }
+  .footer_logo{
+     display: flex;
+  }
+  .footer_logo span{
+    margin-left:8px;
+  }
+  .footer{
+    display:flex; 
+    justify-content: space-between;
+  }
+  .footer a{
+    text-decoration:none;
+    color: #414042;
+    font-size:13px;
+    width:70px;
+    height:24px;
+    border-bottom:1px solid #dee2e6;
+  }
+   .prev_button{
+    width:20px;
+    height:20px;
+    position:absolute;
+    top:50%;
+    left:-30px;
+    background:none;
+    border:none;
+  }
+   .next_button{
+    width:20px;
+    height:20px;
+    position:absolute;
+    top:50%;
+    right:-25px;
+    border:none;
+    background:none;
+  }
+</style>
+<script>
+  $(document).ready(function(){
+     $('.google_review_slider').slick({
+      slidesToShow:3,
+      slidesToScroll: 2,
+      autoplaySpeed:2000,
+      infinite: true,
+      arrows: true,
+      dots: false,
+      prevArrow:'<button type="button" class="prev_button pull-left"><svg class="chevron_left" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 41" fill="none"><path d="M21 0.526611L1 20.5266L21 40.5266" stroke="black"/></svg></button>',
+      nextArrow:'<button type="button" class="next_button pull-right"><svg class="chevron_right" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 41" fill="none"><path d="M1 0.526611L21 20.5266L1 40.5266" stroke="black"/></svg></button>',
+      responsive: [
+    {
+      breakpoint: 768,
+      settings: {     
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    ]
+    });
+  });
+</script>

@@ -1,0 +1,146 @@
+<!--2X2-Min-->
+<section class="bg-white">
+<div class="shopify-section">
+  <div class="container pt-5">
+    <div class="traya-regimen-content">
+      <div class="text-content text-center">      
+        <p class="sub-heading">{{ section.settings.sub_heading }}</p>
+        <h2><strong class="d-block">{{ section.settings.min_sub_heading }}</h2>
+        <h4>{{ section.settings.content }}</h4>
+        <a class="btn btn-dark page_link_btn" href="{{ section.settings.button_link }}">
+          <p class="text-white pt-3">{{ section.settings.btn_text }}</p>
+        </a>
+      </div>
+      <img class="section_image d-none d-md-block w-100" src="{{ section.settings.section_image | img_url:'' }}"/>
+      <img class="mobile_image d-md-none w-100" src="{{ section.settings.mobile_image | img_url:'' }}"/>
+    </div>
+  </div>
+</div>
+</section>
+{% schema %}
+  {
+    "name": "2X2 Min-Section",
+    "settings": [
+    {
+      "type": "text",
+      "id": "sub_heading",
+      "label": "Sub-Heading",
+      "default": "Quick links"
+    },
+    {
+      "type": "html",
+      "id": "min_sub_heading",
+      "label": "2Min-Sub-Heading",
+      "default": "Quick links"
+    },
+    {
+      "type": "text",
+      "id": "content",
+      "label": "Content",
+      "default": "Quick links"
+    },
+    {
+      "type": "image_picker",
+      "id": "section_image",
+      "label": "Desktop-Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Mobile-image"
+    },
+    {
+      "type": "text",
+      "id": "btn_text",
+      "label": "Button-Text",
+      "default": "Quick links"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    }
+  ],
+  "presets": [
+                {
+                    "name":"2X2-Min",
+                    "category":"custom"
+                }
+              ]
+  }
+{% endschema %}
+
+<style>
+  .traya-regimen-content {
+    position: relative;
+  }
+   .text-content {
+    position: absolute;
+    z-index: 1;
+    top: 15%;
+    max-width: 700px;
+    padding: 0 40px;
+    left: 0;
+  }
+  .sub-heading{
+    font-size:20px;
+  }
+  .text-content h2 {
+    font-size: 51px;
+    font-weight: 300;
+    line-height: 0.74;
+    letter-spacing: -0.26px;
+    color: #414042;
+  }
+  .text-content .d-block {
+    font-size: 75px;
+    font-weight: 600 !important;
+    line-height: 1.47;
+    letter-spacing: -0.75px;
+    color: #414042;
+  }
+  .text-content h4{
+    font-size:26px;
+    line-height: 1.47;
+    letter-spacing: -0.26px;
+    color: #231f20;
+    padding: 25px 0px 0px 0px;
+  }
+  .page_link_btn{
+    border-radius: 10px;
+    font-size: 30px;
+    line-height: 45.01px;
+    min-width: 150px;
+    padding: 0px 27px;
+    font-weight:600;
+  }
+  @media only screen and (max-width: 767.98px){
+  .text-content h2 {
+    font-size: 45px;
+    line-height: 40px;
+  }
+  .text-content{
+    top: 6%;
+    max-width: 500px;
+  }
+  .sub-heading{
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .text-content .d-block{
+    font-size: 45px;
+    line-height: 1.57;
+  }
+  .text-content h4{
+    font-size: 17px!important;
+    margin-top: 12px;
+    padding: 0 0px 10px 1px;
+  }
+  .page_link_btn{
+    border-radius: 5px;
+    font-size: 15px;
+    line-height: 21.41px;
+    padding: 0px 27px;
+  }
+}
+</style>

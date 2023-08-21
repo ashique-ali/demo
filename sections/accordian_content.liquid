@@ -1,0 +1,120 @@
+<!--Accordian-content-->
+
+<!-- <section class="accordian"> -->
+  <div class="container">
+    <h2 class="title">Faqs</h2>
+     {% for block in section.blocks %}
+       
+      <div class="faq">
+        <div class="question">
+          <h3 class="heading">
+           {{ block.settings.Question }}
+          </h3>
+          <svg width="15" height="10" viewbox="0 0 42 25">
+            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/></ path>
+          </svg>
+        </div>
+        <div class="answer">
+          <p class="para">
+            {{ block.settings.paragraph }}
+          </p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+<!-- </secion> -->
+{% schema %}
+  {
+    "name": "Accordian",
+    "settings": [],  
+    "blocks":[
+      {
+        "type":"heder",
+         "name":"product",
+         "limit":9,
+         "settings":[
+        {
+          "type": "text",
+          "id": "Question",
+          "label": "Title",
+          "default": "Title"
+        },
+        {
+          "type": "text",
+          "id": "paragraph",
+          "label": "Title",
+          "default": "Title"
+        }
+      ]
+    }
+  ],
+  "presets": [
+                {
+                  "name":"Accordian",
+                  "category":"custom"
+                }
+            ]
+  }
+{% endschema %}
+
+<style>
+  .accordian{
+    color:#fff;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: #1c1c1c;
+  }
+  .container{
+    padding-top: 40px;
+    padding-bottom: 100px;
+    width: 80%;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .title{
+    font-size: 3rem;
+    margin: 2rem 0rem;
+    color:#fff;
+  }
+  .faq{
+    width:700px;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    cursor: pointer;
+    border-bottom: 2px solid #fff;
+  }
+  .question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .heading{
+    font-size: 1.8rem;
+    color:#fff;
+  }
+  .para{
+    padding-top: 1rem;
+    line-height: 1.6rem;
+    font-size: 1.4rem;
+    color:#fff;
+  }
+  .answer{
+    max-height: 0;
+    overflow: hidden;
+  }
+  .faq.active .answer{
+    max-height: 300px;
+  }
+  .faq.active svg{
+    transform: rotate(180deg);
+  }
+</style>
+
+<script>
+  $(document).ready(function(){
+    $('.question').click(function(){
+      $(this).parent('.faq').toggleClass('active').siblings().removeClass('active');
+    });
+  });
+</script>

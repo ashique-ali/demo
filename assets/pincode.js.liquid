@@ -1,0 +1,26 @@
+var pincode= '{{ settings.cart_pincodes }}';
+var main_pincode_data_text = pincode.split(",");
+var check_btn = document.getElementById('PinCheck');
+var input_field = document.getElementById('PincodeEnter');
+var tgt_pincode_show_alert = document.getElementById('pincode_show_alert');
+  check_btn.addEventListener('click' , function(){
+    let input_field_value = input_field.value;
+    let input_field_value_len = input_field_value.length;
+      if(input_field_value_len>=6){
+        let verify_pincode =  main_pincode_data_text.some((filter_data)=>{
+          return filter_data == input_field_value;
+        })
+         if(verify_pincode){
+            tgt_pincode_show_alert.textContent="Delivery is Available"
+            document.getElementById("pincode_show_alert").style.color="green"
+         }else{
+            tgt_pincode_show_alert.textContent="Delivery is not Available"
+            document.getElementById("pincode_show_alert").style.color="red" 
+          }
+          }else{
+            tgt_pincode_show_alert.textContent="Please Enter 6 Digit Pincode"
+            document.getElementById("pincode_show_alert").style.color="red"
+          }
+      })
+
+

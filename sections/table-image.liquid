@@ -1,0 +1,103 @@
+<div class="container-box">
+  <table>
+    <tr>
+      <td colspan="2" rowspan="2">
+        <img src="{{ section.settings.image1 | img_url:''}}"/>
+      </td>
+      <td>
+        <img src="{{ section.settings.image2 | img_url:''}}"/>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="{{ section.settings.image3 | img_url:''}}"/>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="{{ section.settings.image4 | img_url:''}}"/>
+      </td>
+      <td>
+        <img src="{{ section.settings.image5 | img_url:''}}"/>
+      </td>
+      <td>
+        <img src="{{ section.settings.image6 | img_url:''}}"/>
+      </td>
+    </tr>
+  </table>
+</div>
+{% schema %}
+  {
+    "name": "gallery",
+    "settings": [
+    {
+      "type": "image_picker",
+      "id": "image1",
+      "label": "Logo image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image2",
+      "label": "Logo image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image3",
+      "label": "Logo image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image4",
+      "label": "Logo image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image5",
+      "label": "Logo image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image6",
+      "label": "Logo image"
+    }
+  ],
+  "presets": [
+                {
+                  "name":"gallery",
+                  "category":"custom"
+                }
+            ]
+  }
+{% endschema %}
+<style>
+  *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+  .container-box table{
+    margin:0 auto;
+    border:none;
+  }
+   table:not([class]) td, table:not([class]) th{
+      padding: 6px 8px 0px 8px;
+      border: 0.1remsolidrgba(var(--color-foreground),.2);
+  }
+  @media only screen and (max-width:560px){
+	  .container{
+		width:100%;
+		}
+		table tr td img{
+		width:100%;
+		}
+	}
+  @media only screen and (min-width:760px){
+	  .container{
+		width:100%;
+        padding:50px;
+		}
+		table tr td img{
+		width:100%;
+		}
+	}
+</style>

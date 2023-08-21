@@ -1,0 +1,115 @@
+<!--fq-with-image-->
+
+<section class="bg-white pt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 pt-5">
+        <div class="card_body pt-5">
+          {% for block in section.blocks %}
+          <div class="accordian_content">
+            <div class="question">
+              <p class="heading">{{ block.settings.ques }}</p>
+                <svg width="15" height="10" viewbox="0 0 42 25">
+                  <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/></ path>
+                </svg>
+            </div>
+            <div class="answer">
+              <p class="paragraph">{{ block.settings.ans }}</p>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="col-md-5 combo-img mt-4 mt-md-0 mb-3 mb-md-0">
+        <div class="acc_image">
+          <img class="faq_img" src="{{ section.settings.acc_images | img_url:'' }}"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% schema %}
+  {
+    "name": "Faq-Section",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "acc_images",
+        "label": "Acc-image"
+      }
+    ],
+    "blocks":[
+      {
+        "type": "head",
+         "name":"Marquee-slider",
+        "settings":[
+          {
+            "type": "text",
+            "id": "ques",
+            "label": "Question"
+          },
+          {
+            "type": "text",
+            "id": "ans",
+            "label": "Answer"
+          }
+        ]
+      }
+    ],
+     "presets": [
+                  {
+                    "name":"Accordian-image",
+                    "category":"custom"
+                  }
+                ]
+  }
+{% endschema %}
+
+<style>
+  .accordian_content{
+    margin-top: 1rem;
+/*     padding-bottom: 1rem; */
+    cursor: pointer;
+    border-bottom: 2px solid #000;
+  }
+  .question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .heading{
+    font-size: 17px;
+    color: #414042;
+  }
+  .paragraph{
+    padding-top: 1rem;
+    line-height: 1.6rem;
+    padding-bottom:1rem;
+    font-size: 17px;
+    color: #414042;
+    font-style: normal;
+    line-height: 1.36;
+    letter-spacing: 1px;
+  }
+  .answer{
+    max-height: 0;
+    overflow: hidden;
+  }
+  .accordian_content.active .answer{
+    max-height: 300px;
+  }
+  .accordian_content.active svg{
+    transform: rotate(180deg);
+  }
+ .faq_img{
+    width:100%;
+  }
+</style>
+
+<script>
+  $(document).ready(function(){
+    $('.question').click(function(){
+      $(this).parent('.accordian_content').toggleClass('active').siblings().removeClass('active');
+    });
+  });
+</script>

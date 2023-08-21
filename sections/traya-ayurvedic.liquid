@@ -1,0 +1,138 @@
+<!--traya-aurvedic-->
+
+<div class="shopify_section mt-5 pt-5 bg-white">
+  <div class="three_fold pb-5">
+    <div class="container">
+      <div class="three_fold_heading text-center">
+        <p class="three-fold-head">
+          {{ section.settings.text1 }}
+        </p>
+      </div>
+      <div class="content__wrapper text-center px-2 three_field_img">
+        <p class="subheading py-4 mb-0">
+          {{ section.settings.text2 }}
+        </p>
+        <p class="content_ways mb-4">
+          {{ section.settings.text3 }}
+        </p>
+        <p class="description mb-md-5">
+          {{ section.settings.text4 }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "three-fold-section",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "banner_image",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "text1",
+        "label": "Heading",
+        "default": "Quick links"
+      },
+      {
+        "type": "text",
+        "id": "text2",
+        "label": "subheading",
+        "default": "Quick links"
+      },
+      {
+        "type": "text",
+        "id": "text3",
+        "label": "content_ways",
+        "default": "Quick links"
+      },
+      {
+        "type": "text",
+        "id": "text4",
+        "label": "description",
+        "default": "Quick links"
+      }
+    ],
+   "presets":[
+              {
+                "name":"three-fold-way",
+                "category":"custom"
+              }
+            ]
+}
+{% endschema %}
+
+<style>
+  *{
+    box-sizing:border-box;
+  }
+  .three_fold{
+    background-image: url("{{ section.settings.banner_image | img_url: ' ' }}");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: contain;
+  }
+  .content__wrapper{
+    width:100%;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  .three-fold-head{
+    font-size: 44px;
+    font-weight: 800;
+    font-style: normal;
+    line-height: 61.61px;
+  }
+  .abc{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 56.28px;
+  }
+  .subheading{
+    font-size: 23.89px;
+    line-height: 32.59px;
+    font-style: normal;
+    opacity:0.8;
+  }
+  .content_ways{
+    font-size: 46.89px;
+    line-height: 39px;
+    color: #B4CA6C;
+    font-style: normal;
+  }
+  .description{
+    font-size: 23.89px;
+    line-height: 33px;
+    font-style: normal;
+    font-weight: 300px;
+    opacity:0.7;
+  }
+
+  
+   @media only screen and (max-width: 480px){
+    .three-fold-head{
+      font-size:18px;
+      line-height:21.78px;
+    }
+    .abc{
+      font-size:18px;
+      line-heiht:19.36px;
+    }
+    .three_fold{
+      background-image:none;  
+    }
+    .three_field_img{
+      background-image: url('https://cdn.shopify.com/s/files/1/0563/7187/1811/files/1920x500.jpg?v=1669285962');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    .subheading{
+      font-size:18.03px;
+/*       max-width: 147px; */
+      margin:auto;
+    }
+  }
+</style>

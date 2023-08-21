@@ -1,0 +1,51 @@
+{% schema %}
+  {
+    "name": "Block-page",
+    "settings":[
+      {
+        "type": "text",
+        "id": "footer_linklist_title",
+        "label": "Heading",
+        "default": "Quick links"    
+      }     
+    ],  
+    "blocks":[
+    {
+      "type": "Head",
+      "name": "block-page",
+      "limit":12,
+      "settings":[
+        {
+          "type": "image_picker",
+          "id": "image1",
+          "label": "gallery_image"
+        },
+        {
+          "type": "text",
+          "id": "footer_linklist_title",
+          "label": "Heading",
+          "default": "Quick links"    
+        }
+      ]
+    }, 
+    {
+      "type": "Head2",
+      "name": "block-page2",
+      "limit":12,
+      "settings":[
+        {
+          "type": "image_picker",
+          "id": "block2_image1",
+          "label": "img"
+        }
+      ]
+    }
+  ],  
+  "presets":[
+          {
+            "name":"block-page",
+            "category":"custom"
+          }
+            ]
+}
+{% endschema %}

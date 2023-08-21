@@ -1,0 +1,318 @@
+<section class="bg-white">
+  <div class="container home-journey pb-5 pt-5">
+    <p class="text-center font-weight-bold section-title">
+      {{ section.settings.section-title }}
+    </p>
+    <div class="row  traya-journey">
+      {% for block in section.blocks %}    
+        <div class="col-md-4">
+          <a href="{{ section.settings.page_link }}">                  
+            <div class="journey mt-4">
+              <div class="journey-card">
+                <div class="text-center d-none d-md-block">
+                  <img src="{{block.settings.step1_image | img_url:' '}}"/>
+                </div>
+                <div class="text-left d-md-none mobile-card-image mx-2">
+                  <img src="{{block.settings.step1_mobile_image | img_url:' '}}"/>
+                </div>
+                <div class="journey-card-text mx-1 mx-md-0">
+                  <p class="font-weight-bold steps-heading">
+                    {{ block.settings.steps_heading }}
+                  </p>
+                  <p class="steps-text">
+                    {{ block.settings.steps-text }}
+                  </p>
+                </div> 
+              </div>
+              <hr class="journey-card-divider my-3 my-md-4">
+              <div class="d-flex justify-content-between align-items-centers">
+                <p class="steps text-uppercase pl-2 pl-md-auto">
+                  {{ block.settings.steps1 }}
+                </p>
+                <p class="time">
+                  {{ block.settings.time }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+      {% endfor %}
+    </div>
+    <div class="text-center">
+      <p class="text-capitalize mt-5 mb-3 px-4 px-md-0 mb-md-0 journey-regrow">
+        {{ section.settings.regrow_text }}
+      </p>
+      <a href="{{ section.settings.button_link }}" class="start-journey-btn btn btn-dark mt-3 shadow">
+        {{ section.settings.button_text }}
+      </a>
+    </div>
+  </div>
+</section>
+{% schema %}
+  {
+    "name": "The-Journey-Section",
+    "settings":[
+    {
+      "type": "text",
+      "id": "section-title",
+      "label": "Title",
+      "default": "Title"
+    },
+    {
+      "type": "text",
+      "id": "regrow_text",
+      "label": "regrow_text",
+      "default": "Title"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "button_text",
+      "default": "Title"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    }
+  ],  
+    "blocks":[
+    {
+      "type":"heder",
+       "name":"Journey-Section",
+       "limit":6,
+       "settings":[
+        {
+          "type": "image_picker",
+          "id": "step1_image",
+          "label": "Logo image"
+        },
+        {
+          "type": "url",
+          "id": "page_link",
+          "label": "Page link"
+        },
+        {
+          "type": "image_picker",
+          "id": "step1_mobile_image",
+          "label": "Logo image"
+        },
+        {
+          "type": "text",
+          "id": "steps_heading",
+          "label": "steps_heading",
+          "default": "Title"
+        },
+        {
+          "type": "text",
+          "id": "steps-text",
+          "label": "steps-text",
+          "default": "Title"
+        },
+        {
+          "type": "text",
+          "id": "steps1",
+          "label": "steps1",
+          "default": "Title"
+        },
+        {
+          "type": "text",
+          "id": "time",
+          "label": "time-text",
+          "default": "Title"
+        }
+      ]
+    }
+  ],
+  "presets":[
+                {
+                  "name":"The-Journey-Section",
+                  "category":"custom"
+                }
+            ]
+  }
+{% endschema %}
+
+<style>
+  .section-title{
+    font-size:26px;
+    line-height:35px;
+    color:#000;
+  }
+  .journey{
+    width:100%;
+    border: 1px solid #E8E8E8;
+    box-shadow: 0px 3.79529px 3.79529px rgb(0 0 0 / 25%);
+    border-radius:10px;
+    padding:30px 30px 20px;
+  }
+  .steps-heading{
+    margin-bottom:0px;
+    margin-top:25px;
+    font-size:21px;
+    line-height:25px;
+    color: #000;
+  }
+  .journey-card-text{
+    text-align:center;
+  }
+  .steps-text{
+    margin-top:0.5rem!important;
+    font-size:12px;
+    line-height:18px;
+    color:#000;
+    width:90%;
+    margin:auto;
+  }
+  .traya-journey a:hover{
+    text-decoration:none;
+  }
+  .steps{
+    font-size:18px;
+    line-height:22px;
+    color: #414143;
+    font-weight:700;
+    margin:0;
+    opacity:0.5;
+    font-family: fredoka_oneregular;
+  }
+  .time{
+    font-size: 13px;
+    line-height: 18px;
+    color: #000;
+    opacity:0.5;
+  }
+  .journey-regrow{
+    font-size:24px;
+    line-height:33px;
+    color:#414143;
+  }
+  .start-journey-btn{
+    border-radius: 10px;
+    font-size: 22px;
+    line-height: 30px;
+    padding: 10px 45px;
+  }
+  .start-journey-btn:hover{
+    background: #B7D340;
+    border-color: #b7d340;
+  }
+  @media only screen and (max-width: 767px){
+  .journey{
+    margin-top:15px;
+    width:100%;
+  }
+  .journey-regrow{
+    font-size: 21px;
+    line-height: 29px;
+  }
+  .journey-card{
+    display:flex;
+    align-items: center;
+  }
+  .journey-card-text{
+    width:70%;
+    text-align:left;
+    min-height:70px;
+  }
+  .mobile-card-image{
+    width:25%;
+  }
+  .steps-heading{
+    margin-top:0px;
+    font-size:17px;
+    line-height:23px;
+  }
+  .steps-text{
+    font-size:13px;
+    line-height:18px;
+    width:100%;
+    margin-top:0rem!important;
+  }
+  .time{
+    font-size:14px;
+    line-height:19px;
+  }
+  .steps{
+    font-size:19px;
+  }
+  .start-journey-btn{
+    border-radius: 10px;
+    font-size: 22px;
+    line-height: 30px;
+    padding: 10px 45px;
+  }
+  .start-journey-btn:hover{
+    background: #B7D340;
+    border-color: #b7d340;
+  }
+}
+  @media only screen and (max-width: 350px){
+  .journey{
+    margin-top:15px;
+    padding:15px 10px 10px;
+    width:100%;
+  }
+  p.journey-regrow{
+    font-size: 21px;
+    line-height: 29px;
+  }
+  .journey-card{
+    display:flex;
+    align-items: center;
+  }
+  .journey-card-text{
+    width:70%;
+    text-align:left;
+    min-height:70px;
+  }
+  .mobile-card-image{
+    width:25%;
+  }
+  .steps-heading{
+    margin-top:0px;
+    font-size:17px;
+    line-height:23px;
+  }
+  .steps-text{
+    font-size:13px;
+    line-height:18px;
+    width:100%;
+    margin-top:0rem!important;
+  }
+  .time{
+    font-size:14px;
+    line-height:19px;
+  }
+  .steps{
+    font-size:19px;
+  }
+  .start-journey-btn{
+    border-radius: 10px;
+    font-size: 22px;
+    line-height: 30px;
+    padding: 10px 25px;
+  }
+  .start-journey-btn:hover{
+    background: #B7D340;
+    border-color: #b7d340;
+  }
+}
+  @media only screen and (max-width: 991px) and (min-width: 768px){
+  .journey{
+    width: 100%;
+    border: 1px solid #E8E8E8;
+    box-shadow: 0px 3.79529px 3.79529px rgb(0 0 0 / 25%);
+    border-radius: 10px;
+    padding: 30px 30px 20px;
+    height:320px;
+  }
+  .steps-heading{
+    margin-bottom: 0px;
+    margin-top: 25px;
+    font-size: 16px;
+    line-height: 25px;
+    color: #000;
+  }
+}
+</style>

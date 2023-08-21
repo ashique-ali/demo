@@ -1,0 +1,227 @@
+<div class="position-relative">
+  <div class="d-none d-md-block">
+    <img src="https://cdn.shopify.com/s/files/1/0563/7187/1811/files/Web_The_Threefold_Way_1600x_51344e8e-c858-4930-a5e9-3190f0c23c45.webp?v=1664434899" width="100%" class="three-foldway-main1 d-none d-md-block">
+  </div>
+  <div class="d-md-none">
+    <img src="https://cdn.shopify.com/s/files/1/0563/7187/1811/files/mobile.webp?v=1663757155" width="100%" class="d-md-none three-foldway-main2">
+  </div>
+  <div class="three-fold-text position-absolute">
+    <p class="threefold-second d-none d-md-block">
+      {{ section.settings.text1 }}
+    </p>
+    <p class="threefold_mobile_text d-md-none">
+      {{ section.settings.mobile_text1 }}
+    </p>
+    <p class="threefold-first font-weight-bold position-relative">
+      {{ section.settings.text2 }}
+    </p>
+    <p class="threefold-third text-black mb-4 pt-4 mt-md-4 my-md-4">
+      {{ section.settings.text3 }}
+    </p>
+    <p class="threefold-fourth mt-4">
+      {{ section.settings.text4 }}
+    </p>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Three-Fold-Way",
+    "settings":[
+      {
+        "type": "html",
+        "id": "text1",
+        "label": "text1",
+        "default": "Title"
+      },
+      {
+        "type": "html",
+        "id": "mobile_text1",
+        "label": "text2",
+        "default": "Title"
+      },
+      {
+        "type": "text",
+        "id": "text2",
+        "label": "text2",
+        "default": "Title"
+      },
+      {
+        "type": "text",
+        "id": "text3",
+        "label": "text3",
+        "default": "Title"
+      },
+      {
+        "type": "text",
+        "id": "text4",
+        "label": "text3",
+        "default": "Title"
+      }
+    ],
+    "presets":[
+                {
+                  "name":"Three-Fold-Way",
+                  "category":"custom"
+                }
+              ]
+}
+{% endschema %}
+
+<style>
+  .three-foldway-main1{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    backgound-position: center;
+    height: calc(500px);
+}
+  .three-fold-text{
+    width: calc(50%);
+    padding: 0px 130px;
+    position: absolute;
+    top: calc(25%);
+  }
+  .threefold-first{
+    font-size: 36px;
+    line-height: 45px;
+    color: #414143;
+    font-family: fredoka_oneregular!important;
+  }
+    span,.ab{
+      font-weight:700;
+    }
+  .threefold-second{
+      font-size: 20px;
+      line-height: 25px;
+    }
+  .threefold-second{
+    font-size: 20px;
+    line-height: 25px;
+    color: #414143;
+    text-transform: uppercase;
+  } 
+  .threefold-third{
+    font-size: 21px;
+    line-height: 30px;
+    color: #414143;
+    font-weight:600;
+  }
+  .threefold-fourth{
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #000;
+  }
+  .threefold-first:after{
+    content:"";
+    position:absolute;
+    background:#414042;;
+    display:block;
+    height: 3px;
+    width: 45px;
+    left: 1%;
+    transform: translateX(0%);
+  }
+  @media only screen and (max-width: 1430.98px) and (min-width: 1200px){
+    .three-fold-text{
+      padding: 0px 100px;
+      top: calc(20%);
+    }
+    .threefold-third{
+      font-size: 18px;
+      line-height: 25px; 
+    }
+    .threefold-fourth{
+      font-size:17px;
+      line-height:24px;
+    }
+    .three-foldway-main1{
+      height: 400px;
+    }
+  }
+  @media only screen and (max-width: 1199px) and (min-width: 1024px){
+    .three-fold-text{
+      padding: 0px 0px 0px 50px;
+      top: calc(18%);
+    }
+  }
+  @media only screen and (max-width: 1023px) and (min-width: 768px){
+    .three-fold-text{
+      padding: 0px 10px;
+      top: calc(18%);
+    }
+   .threefold-second{
+      font-size: 16px;
+      line-height: 20px;
+    }
+    span,.ab{
+      font-weight:700;
+    }
+    .threefold-first{
+      font-size: 30px;
+      line-height: 40px;
+    }
+    .threefold-third{
+      font-size: 16px;
+      line-height: 25px;
+    }
+    .threefold-fourth{
+      font-size: 14.5px;
+      line-height: 22px;
+    }
+    .three-foldway-main1{
+      height: 350px;
+    }
+  }
+  @media only screen and (max-width: 767px){
+    .three-foldway-main2{
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      height: 550px;
+    }
+    p.threefold_mobile_text{
+      font-size: 13px;
+      line-height: 19px;
+      text-transform: uppercase;
+    }
+    span,.ab{
+      font-weight:700;
+    }
+    .three-fold-text{
+      width: 100%;
+      padding: 35px 15px;
+      text-align: center;
+      top: 0px;
+    }
+    .threefold-first{
+      font-size: 32px;
+      line-height: 39px;
+      margin: 0;
+    }
+    .threefold-third{
+      line-height: 18px;
+      font-size: 14px;
+      margin-top: 15px;
+    }
+    .threefold-fourth{
+      font-size:15px;
+      line-height:22px;
+      }
+   .threefold-first:after{
+      content:"";
+      position:absolute;
+      background:#414042;;
+      display:block;
+      height:4px;
+      width:14px;
+      left:50%;
+      margin-top: 10px;
+      transform: translateX(-50%);
+    }
+  }
+  @media only screen and (max-width: 400px){
+    .three-foldway-main2{
+      height: 520px;
+    }
+  }
+</style>

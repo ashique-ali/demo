@@ -1,0 +1,141 @@
+<!------- /sections/rahul.liquid --------->
+<div class="headings">
+  <div class="heading1">
+    {{ section.settings.heading1 }}
+  </div>
+  <div class="heading2">
+   {{ section.settings.heading2 }} 
+  </div>
+  <div class="heading3">
+    {{ section.settings.heading3 }}
+  </div>
+</div>
+<div class="container">
+  {% for block in section.blocks %}
+    <div class="image-box">
+      <a href="{{ block.settings.button_link }}">
+        <img src="{{block.settings.image_box | img_url:''}}"/>      
+      </a>
+    </div>
+  {% endfor %}
+</div>
+{% schema %}
+  {
+    "name": "image-gallery",
+    "settings": [
+    {
+      "type": "textarea",
+      "id": "heading1",
+      "label": "Welcome message",
+      "default": "Welcome to my shop!"
+    },
+    {
+      "type": "textarea",
+      "id": "heading2",
+      "label": "Welcome message",
+      "default": "Welcome to my shop!"
+    },
+    {
+      "type": "textarea",
+      "id": "heading3",
+      "label": "Welcome message",
+      "default": "Welcome to my shop!"
+    }
+  ],  
+    "blocks":[
+  {
+    "type":"heder",
+     "name":"image-gallery",
+     "limit":9,
+     "settings":[
+  {
+    "type": "image_picker",
+    "id": "image_box",
+    "label": "Logo image"
+  },
+  {
+    "type": "url",
+    "id": "button_link",
+    "label": "Button link"
+  }
+  ]
+  }
+  ],
+  "presets": [
+                {
+                  "name":"image-gallery",
+                  "category":"custom"
+                }
+            ]
+  }
+{% endschema %}
+<style>
+	*{
+		margin:0;
+		padding:0;
+		box-sizing:border-box;
+		font-family:sans-serif;
+	}
+	.container{
+		width:100%;
+      	display:grid;
+        grid-template-columns:auto auto auto;
+        padding:10px;
+	}
+	.image-box{
+        padding:5px;
+    }
+  .image-box img{
+      width:100%;
+      height:100%; 
+  }
+  .headings{
+      margin-left:50px;
+      text-align:center;
+  }
+  .heading2{
+    font-weight:bold;
+    color:lightpink;
+    font-size:25px;
+  }
+  .heading2 a{
+    text-decoration:none;
+    color:lightpink;
+  }
+  .heading3{
+    font-size:20px;
+  }
+  @media only screen and (max-width:560px) {
+  .container{
+	width:100%;
+  }
+	.image-box{
+	width:100%;
+	}
+}
+  @media only screen and (min-width:760px) {
+  .container{
+	width:100%;
+	}
+  .image-box{
+	width:100%;
+	}
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>  
+<script>
+$(document).ready(function(){
+  if ($(window).width() < 350) {
+        $('.container').slick({
+            arrows: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: false,
+            autoplaySpeed: 2000,
+            infinite: true,
+            arrows:true
+        });
+    }
+  });
+</script> 

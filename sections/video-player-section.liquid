@@ -1,0 +1,75 @@
+<!-- video-player-section -->
+<section class="bg-white {{ section.id  }}">
+  <div class="video_player_section page-width" style="padding: 0rem;">
+    <div class="video_player">
+      {% if section.settings.section_title != blank %}
+        <h1 class="sub_heading">
+          {{ section.settings.section_title }}
+        </h1>
+      {% endif %}
+    </div>
+    
+    <div class="video_player_mp4">
+      <div class="pagebuilder-video-container">
+        {% if section.settings.video-url == blank %}
+          <video loop muted playsinline width="100%" class="video" id="video" controls poster="https://cdn.shopify.com/s/files/1/0563/7187/1811/files/bg.jpg?v=1670477677">
+            <source src="{{ section.settings.video-url }}" type="video/mp4" />
+          </video>
+          {% else %}
+          <iframe frameborder="0" allowfullscreen="" src="{{ section.settings.video-url }}" data-element="video"></iframe>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+{% schema %}
+  {
+    "name": "Video-Player-section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "section_title",
+        "label": "section-title"
+      },
+      {
+        "type": "text",
+        "id": "videofile",
+        "label": "Video URL",
+        "info": "https://cdn.shopify.com/s/files/1/2018/8867/files/ice.mp4"
+      },
+      {
+        "type": "image_picker",
+        "id": "video_image",
+        "label": "Video-Image"
+      },
+      {
+          "type": "video_url",
+          "accept": ["vimeo", "youtube"],
+          "id": "video-url",
+          "label": "Video URL"
+      }
+    ],
+     "presets":[
+            {
+              "name":"Video-Player-section",
+              "category":"custom"
+            }
+              ]
+  }
+{% endschema %}
+
+<style>
+  .pagebuilder-video-container iframe {
+    width: 97.2%!important;
+  }
+  .sub_heading{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 1.1;
+    font-family: "Corporate S Light",sans-serif;
+  }
+</style>

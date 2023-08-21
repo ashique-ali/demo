@@ -1,0 +1,210 @@
+<section class="main_section">
+  <div class="container">
+    <div class="main_section text-center py-5 pt-5">
+      <span class="d-block text-center pt-5">
+        <svg width="114" height="115" viewBox="0 0 114 115" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M78.4562 37.0027L47.0239 68.4351L32.8329 54.2441C31.8304 53.2416 30.4707 52.6784 29.053 52.6784C27.6353 52.6784 26.2757 53.2416 25.2732 54.2441C24.2707 55.2466 23.7075 56.6062 23.7075 58.0239C23.7075 58.7259 23.8458 59.421 24.1144 60.0696C24.3831 60.7181 24.7768 61.3074 25.2732 61.8038L43.1777 79.7083C43.657 80.2106 44.2332 80.6105 44.8715 80.8837C45.5098 81.1569 46.1969 81.2978 46.8912 81.2978C47.5855 81.2978 48.2726 81.1569 48.9109 80.8837C49.5492 80.6105 50.1255 80.2106 50.6048 79.7083L85.7507 44.5624C86.2519 44.0687 86.65 43.4803 86.9217 42.8314C87.1934 42.1825 87.3333 41.486 87.3333 40.7825C87.3333 40.079 87.1934 39.3825 86.9217 38.7336C86.65 38.0847 86.2519 37.4963 85.7507 37.0027C84.7781 36.0453 83.4681 35.5087 82.1034 35.5087C80.7387 35.5087 79.4288 36.0453 78.4562 37.0027Z" fill="white"></path>
+          <path d="M56.9708 0C46.4447 0.0107844 36.127 2.93458 27.1601 8.44763C18.1932 13.9607 10.9271 21.8479 6.16635 31.2358C1.40557 40.6238 -0.664087 51.1461 0.186546 61.6378C1.03718 72.1295 4.77491 82.181 10.9859 90.6794C17.1968 99.1778 25.6386 105.791 35.3765 109.788C45.1144 113.784 55.7684 115.008 66.1587 113.323C76.549 111.638 86.2703 107.11 94.246 100.241C102.222 93.3715 108.141 84.4289 111.347 74.4032C111.636 73.1075 111.428 71.7507 110.766 70.6006C110.103 69.4505 109.033 68.5907 107.767 68.191C106.501 67.7913 105.131 67.8806 103.928 68.4414C102.725 69.0022 101.776 69.9937 101.268 71.2202C97.7619 82.4477 90.148 91.9385 79.9481 97.796C69.7481 103.653 57.7135 105.446 46.2492 102.815C34.785 100.185 24.7357 93.3249 18.1098 83.6066C11.4839 73.8882 8.76943 62.0274 10.5089 50.3946C12.2484 38.7618 18.3137 28.2138 27.4926 20.8589C36.6716 13.5039 48.288 9.88364 60.0203 10.7217C71.7525 11.5597 82.7364 16.7943 90.7768 25.3793C98.8171 33.9643 103.322 45.2672 103.39 57.0292C103.39 58.4362 103.949 59.7855 104.944 60.7804C105.939 61.7753 107.288 62.3342 108.695 62.3342C110.102 62.3342 111.451 61.7753 112.446 60.7804C113.441 59.7855 114 58.4362 114 57.0292C113.979 41.9106 107.964 27.4172 97.2733 16.7267C86.5828 6.03623 72.0894 0.0210517 56.9708 0Z" fill="white"></path>
+        </svg>
+      </span>
+      <h2 class="section-title-main1 text-white mb-3 mt-5">{{ section.settings.heading }}</h2>
+      <h4 class="section-title-main2 text-white mb-5">{{ section.settings.heading2 }}</h4>
+    </div>
+  </div>
+</section>
+<section class="bg-white">
+  <div class="container pt-5">
+    <h2 class="section-title-main text-center">{{ section.settings.heading3 }}</h2>
+    <div class="row">
+      <div class="col-md-10 mx-auto">
+        <div class="row align-items-center">
+          <div class="col-md-6 mb-4 text-center text-md-left">
+            <h3 class="paragraph1 col-md-7 mb-4 px-0 d-none d-md-block">
+              {{ section.settings.paragraph1 }}
+            </h3>
+            <h6 class="paragraph1_mobile_view col-md-7 mb-4 px-0 d-md-none">
+              {{ section.settings.paragraph1_mobile_view }}
+            </h6>
+            <button type="button" class="btn btn-info p-3 font-weight-bold">
+              BUILD YOUR PROFILE
+            </button>
+          </div>
+          <div class="col-md-6 d-none d-md-block">
+            <img class="image w-100" src="{{ section.settings.mobile_image | img_url:' ' }}"/>  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-dark py-3 d-none d-md-block">
+    <h3 class="footer_text font-weight-bold l-0 mb-0 text-center text-white">{{ section.settings.footer_text }}</h3>
+  </div>
+  <div class="d-md-none">
+    <div class="container">
+      <h6 class="footer_text_mobile_view mb-0 text-center">This will enable the doctor to better assess your case</h6>
+    </div>
+  </div>
+  <div class="d-md-none mt-5">
+     <img src="{{ section.settings.mobile_view_image | img_url:' ' }}" alt="This will enable the doctor to better assess your case" class="col-10 mx-auto d-block">
+  </div>
+</section>
+{% schema %}
+  {
+    "name": "thankyou",
+    "settings": [
+       {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading1",
+        "default": "Heading"
+      },
+      {
+        "type": "text",
+        "id": "heading2",
+        "label": "Heading2",
+        "default": "Heading"
+      },
+      {
+        "type": "text",
+        "id": "heading3",
+        "label": "Heading2",
+        "default": "Heading"
+      },
+      {
+        "type": "text",
+        "id": "paragraph1",
+        "label": "paragraph1",
+        "default": "Heading"
+      },
+      {
+        "type": "image_picker",
+        "id": "mobile_image",
+        "label": "Logo image"
+      },
+      {
+        "type": "text",
+        "id": "footer_text",
+        "label": "footer_text",
+        "default": "Heading"
+      },
+      {
+        "type": "text",
+        "id": "paragraph1_mobile_view",
+        "label": "footer_text",
+        "default": "Heading"
+      },
+      {
+        "type": "image_picker",
+        "id": "mobile_view_image",
+        "label": "mobile_view_image"
+      }
+    ],
+  "presets":[
+                {
+                  "name":"thankyou",
+                  "category":"custom"
+                }
+            ]
+  }
+{% endschema %}
+
+<style>
+  .main_section{
+    background: #A5C174;
+  }
+  h2.section-title-main1{
+    font-size: 40px;
+    font-weight:500;
+  }
+  h4.section-title-main2{
+    font-size:22px;
+    font-weight:500;
+    line-height: 2.2;
+  }
+/*   .btn{
+    border-radius: 12px;
+    font-weight: 800;
+    padding: 9px 27px;
+    font-size: 19px;
+    width: 65%;
+/*     background: #68AA9E; */
+    margin-left:-15px;
+  }    */
+  h2.section-title-main {
+    font-size: 38px;
+    font-weight:600;
+    line-height: 1.25;
+    letter-spacing:1px;
+    margin-bottom: 30px;
+  }
+  .footer_text{
+    font-size:26px;
+    font-weight:600;
+  }
+ @media (min-width: 769px){
+   .paragraph1{
+      font-size:26px;
+      font-weight: 500;
+      margin-left: -15px;
+      line-height:1.4;
+    }
+ }
+  
+  @media (max-width: 768px){
+  h2.section-title-main {
+    font-size: 22px;
+  }
+  .paragraph1_mobile_view{
+    font-size:16px;
+    font-weight: 500;
+    line-height: 2.2;
+    margin-top:-50px;
+  }
+  .footer_text_mobile_view{
+    font-size:15px;
+    line-height: 2.2;
+  }
+ h2.section-title-main1{
+    font-size: 44px;
+    font-weight:800;
+  }
+  h4.section-title-main2{
+   font-size: 44px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: -.22;
+  }
+    h4.section-title-main2 {
+    font-size:28px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  .paragraph1 {
+    font-size:28px;
+    font-weight: 500;
+    margin-left:-15px;
+    }
+/*   .btn{
+    border-radius: 12px;
+    font-weight: 800;
+    padding: 9px 27px;
+    font-size: 16px;
+    width: 100%;
+    background: #68AA9E;
+    margin-left:-15px;
+  }    */
+}
+   @media (max-width: 426px){
+    h2.section-title-main1{
+      font-size: 22px;
+      font-weight:bold;
+    }
+    h4.section-title-main2{
+      font-size:22px;
+      font-weight:500;
+      line-height: 1.5; 
+    }   
+  }
+</style>

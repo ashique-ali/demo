@@ -1,0 +1,107 @@
+<!------- /sections/task.liquid --------->
+<div class="container">
+  {% for block in section.blocks %}
+  <div class="image-box">
+    <a href="all product">
+      <img src="{{block.settings.image_box | img_url:''}}"/>
+    </a>
+	<div class="para">
+      {{ block.settings.footer_linklist_title }}
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% schema %}
+  {
+    "name": "home-page-image",
+    "settings": [],  
+    "blocks":[
+  {
+    "type":"heder",
+     "name":"home-page-image",
+     "limit":6,
+     "settings":[
+  {
+    "type": "image_picker",
+    "id": "image_box",
+    "label": "Logo image"
+  },
+  {
+    "type": "text",
+    "id": "footer_linklist_title",
+    "label": "Heading",
+    "default": "Quick links"
+  }
+  ]
+  }
+  ],
+  "presets": [
+                {
+                  "name":"home-page-image",
+                  "category":"custom"
+                }
+            ]
+  }
+{% endschema %}
+<style>
+	*{
+		margin:0;
+		padding:0;
+		box-sizing:border-box;
+		font-family:Comic Sans Ms;
+	}
+	.container{
+		width:100%;
+		margin:0 auto;	
+		display:flex;
+		flex-wrap:wrap;
+		text-align:center;
+	}
+	.image-box{
+		width:100%;
+		position:relative;
+	}
+	.image-box img{
+		width:100%;
+        height:100%;
+		padding:5px;
+	}
+	.para{
+		position: absolute;
+		top: 40%;
+		padding:18px;
+		font-size:18px;
+	}
+	@media only screen and (max-width:760px) {
+	  .container{
+		width:100%;
+		}
+		.image-box{
+		width:100%;
+		}
+	}
+	@media only screen and (min-width:760px) {
+	  .container{
+		width:750px;
+		}
+		.image-box{
+		width:100%;
+		}
+	}
+	@media only screen and (min-width:1000px) {
+	  .container{
+		width:980px;
+		}
+		.image-box{
+		width:50%;
+		}
+	}
+	@media only screen and (min-width:1300px) {
+	  .container{
+		width:1280px;
+		}
+		.image-box{
+		width:50%;
+		}
+	}
+</style>

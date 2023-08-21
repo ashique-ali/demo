@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<div class="s-hero-section about-hero-section contact-hero-section" style="background-image: url('https://cdn.shopify.com/s/files/1/0563/7187/1811/files/banner.webp?v=1662978797');">
+  <div class="container_fluid_section">
+    <div class="row_section">
+      <div class="col-md-9 d-none d-md-block">
+        <div class="s-hero-text text-center text-md-left">
+          <h2 class="mb-0 text-center">#savethathairline</h2>
+<!--           <p class="font-weight-bold mt-2 text-dark">ayurvedic wisdom meets dermatology + nutrition</p> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  {% schema %}
+  {
+    "name": "malecombo-page",
+    "settings":[],
+      "blocks":[
+        {
+          "type": "Head",
+          "name": "review_slider",
+          "limit":12,
+          "settings":[
+        {
+          "type": "image_picker",
+          "id": "google_slider_logo",
+          "label": "gallery_image"
+        }
+      ]
+    }
+  ],  
+  "presets":[
+              {
+                "name":"malecombo-page",
+                "category":"custom"
+              }
+            ]
+}
+{% endschema %}

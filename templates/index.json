@@ -1,0 +1,986 @@
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slide-0": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/11.jpg",
+            "heading": "Welcome To My Store",
+            "heading_size": "h1",
+            "subheading": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et do aliqua. Ut enim ad minim veniam, quis nostrue.",
+            "button_label": "Buy Now",
+            "link": "shopify:\/\/collections\/all",
+            "button_style_secondary": true,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 20,
+            "color_scheme": "background-2",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide-1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/13.jpg",
+            "heading": "Welcome To My Store",
+            "heading_size": "h1",
+            "subheading": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et do aliqua. Ut enim ad minim veniam, quis nostrue.",
+            "button_label": "Buy Now",
+            "link": "shopify:\/\/collections\/all",
+            "button_style_secondary": true,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 20,
+            "color_scheme": "background-2",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide-0",
+        "slide-1"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "small",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 3,
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "featured-collection-0": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "All Product",
+        "heading_size": "h2",
+        "description": "<p><\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-2",
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": true,
+        "enable_quick_add": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "166045231159df46e6": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Fruits Collection",
+        "heading_size": "h1",
+        "description": "<p><\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "fruits",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-2",
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": true,
+        "enable_quick_add": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "16604525631f1c4708": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Facewash Collection",
+        "heading_size": "h1",
+        "description": "<p><\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "facewash",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-2",
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": true,
+        "enable_quick_add": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "166045275283a925f5": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Vegitable Collection",
+        "heading_size": "h1",
+        "description": "<p><\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "vegitable",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-2",
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": true,
+        "enable_quick_add": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "multicolumn-0": {
+      "type": "multicolumn",
+      "disabled": true,
+      "blocks": {
+        "column-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/nut1.png",
+            "title": "Happilo Premium International Healthy Nutmix 200g, ‎Almonds, Black Raisins, Cashewnuts,",
+            "text": "<p><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/nut1.png",
+            "title": "Happilo Premium International Healthy Nutmix 200g, ‎Almonds, Black Raisins, Cashewnuts,",
+            "text": "<p><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/nut1.png",
+            "title": "Happilo Premium International Healthy Nutmix 200g, ‎Almonds, Black Raisins, Cashewnuts,",
+            "text": "<p><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/nut1.png",
+            "title": "Happilo Premium International Healthy Nutmix 200g, ‎Almonds, Black Raisins, Cashewnuts,",
+            "text": "<p><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column-0",
+        "column-1",
+        "column-2",
+        "column-3"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "heading_size": "h1",
+        "image_width": "half",
+        "image_ratio": "circle",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "featured-blog": {
+      "type": "featured-blog",
+      "disabled": true,
+      "settings": {
+        "heading": "Blog posts",
+        "heading_size": "h2",
+        "blog": "news",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "disabled": true,
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to our emails",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
+          }
+        },
+        "email-form": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "paragraph",
+        "email-form"
+      ],
+      "settings": {
+        "color_scheme": "accent-2",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 0
+      }
+    },
+    "1660646909808a5ce9": {
+      "type": "contact-form",
+      "disabled": true,
+      "settings": {
+        "heading": "Contact Me!",
+        "heading_size": "h1",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1660806073f34cc761": {
+      "type": "table-image",
+      "disabled": true,
+      "settings": {
+        "image1": "shopify:\/\/shop_images\/dsc_9487-edit-35625006-jpg.jpg.ulenscale.546x546.jpg",
+        "image2": "shopify:\/\/shop_images\/dove_social_img_mahak-01-36959012-jpg.jpg.ulenscale.263x263_b3e20eb2-626d-405f-b90d-0587fdbd7d39.jpg",
+        "image3": "shopify:\/\/shop_images\/dove_deeksha_social_media-37115846-jpg.jpg.ulenscale.263x263.jpg",
+        "image4": "shopify:\/\/shop_images\/dove_noor_social_media-37115858-jpg.jpg.ulenscale.263x263.jpg",
+        "image5": "shopify:\/\/shop_images\/dove_social_img_rajeshwari-01-36959010-jpg.jpg.ulenscale.263x263.jpg",
+        "image6": "shopify:\/\/shop_images\/dove_social_img_hemali-01-36959007-jpg.jpg.ulenscale.263x263.jpg"
+      }
+    },
+    "16614936287e7b1bef": {
+      "type": "ashiq",
+      "disabled": true,
+      "blocks": {
+        "63892294-0d9f-4747-9e92-9b4174f3dedc": {
+          "type": "heder",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/a.webp",
+            "paragraph": "Italian Recipes",
+            "button_link": "shopify:\/\/products\/fresho-apple-red-delicious-economy-4-pcs-approx-450g-500g"
+          }
+        },
+        "62e59306-9dd9-40ab-8e28-9455a252f8b2": {
+          "type": "heder",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/b.webp",
+            "paragraph": "Indian Recipes",
+            "button_link": "shopify:\/\/collections\/all"
+          }
+        },
+        "1e3bce56-e927-41ee-9443-12fbb9e3ae40": {
+          "type": "heder",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/a.webp",
+            "paragraph": "Chinese Recipes",
+            "button_link": "shopify:\/\/collections\/all"
+          }
+        },
+        "9d7a29ab-2f34-4af3-9e5f-747e1541b9e6": {
+          "type": "heder",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/b.webp",
+            "paragraph": "Surprise Me",
+            "button_link": "shopify:\/\/collections\/all"
+          }
+        }
+      },
+      "block_order": [
+        "63892294-0d9f-4747-9e92-9b4174f3dedc",
+        "62e59306-9dd9-40ab-8e28-9455a252f8b2",
+        "1e3bce56-e927-41ee-9443-12fbb9e3ae40",
+        "9d7a29ab-2f34-4af3-9e5f-747e1541b9e6"
+      ],
+      "settings": {
+      }
+    },
+    "16629631559a87c8ed": {
+      "type": "traya_google_reviews",
+      "blocks": {
+        "a91ba271-16cd-48b6-8ce5-573eb902a367": {
+          "type": "Head",
+          "settings": {
+            "google_slider_logo": "shopify:\/\/shop_images\/l1.webp",
+            "reviews_slider_logo": "shopify:\/\/shop_images\/s1_77c87a16-5e46-4642-80ec-351df5e22e38.webp",
+            "color": "#1878b9",
+            "text": "A year ago",
+            "card_text": "Don't expect it to works like TV ad's you apply night and next morning head full of hair. Jokes apart... I strongly recommend Traya, personally I have started...",
+            "logo_image2": "shopify:\/\/shop_images\/1_c42773a2-fed8-4caf-bf84-1b98ed53e59e.webp",
+            "logo_name": "Gautham Kamath"
+          }
+        },
+        "d52b89db-9054-4983-bb95-77904705e559": {
+          "type": "Head",
+          "settings": {
+            "google_slider_logo": "shopify:\/\/shop_images\/l1.webp",
+            "reviews_slider_logo": "shopify:\/\/shop_images\/s1_77c87a16-5e46-4642-80ec-351df5e22e38.webp",
+            "color": "#d11919",
+            "text": "A month ago",
+            "card_text": "Thank you Traya team for giving me such an amazing result. I have only one recommendation - have patience and stick to your diet &amp; medicines. I opted...",
+            "logo_image2": "shopify:\/\/shop_images\/2_c148b524-f075-46a2-ba42-ffde50ddaca0.webp",
+            "logo_name": "Ajay R"
+          }
+        },
+        "99b5a013-b742-4f5c-b1bc-cd24320983f9": {
+          "type": "Head",
+          "settings": {
+            "google_slider_logo": "shopify:\/\/shop_images\/l1.webp",
+            "reviews_slider_logo": "shopify:\/\/shop_images\/s1_77c87a16-5e46-4642-80ec-351df5e22e38.webp",
+            "color": "#1878b9",
+            "text": "5 Monts ago",
+            "card_text": "I have been with Traya only for 3 months now, and I can feel the difference in my scalp and hair to a great extent. Even people around me have started noticing...",
+            "logo_image2": "shopify:\/\/shop_images\/3_76f28891-b73b-4eba-9ed4-9073240a8796.webp",
+            "logo_name": "Sambhavi Pandey"
+          }
+        },
+        "988bf381-b3aa-4031-bbb3-91a8901e584d": {
+          "type": "Head",
+          "settings": {
+            "google_slider_logo": "shopify:\/\/shop_images\/l1.webp",
+            "reviews_slider_logo": "shopify:\/\/shop_images\/s1_77c87a16-5e46-4642-80ec-351df5e22e38.webp",
+            "color": "#1878b9",
+            "text": "A week ago",
+            "card_text": "They're so professional!....<br>The initial response is expressive and impressive so far....<br>Should should give it a chance once....",
+            "logo_name": "Mohit Mishra"
+          }
+        },
+        "3b57e2b4-e257-4aec-a8ff-12059b877fe2": {
+          "type": "Head",
+          "settings": {
+            "google_slider_logo": "shopify:\/\/shop_images\/l1.webp",
+            "reviews_slider_logo": "shopify:\/\/shop_images\/s1_77c87a16-5e46-4642-80ec-351df5e22e38.webp",
+            "color": "#d11919",
+            "text": "A week ago",
+            "card_text": "I had really good experience with Traya and also have seen much improvement during my hair treatment. Sneha is really knowledgeable and...",
+            "logo_image2": "shopify:\/\/shop_images\/5_a0eae78c-9429-46f1-bc87-806ff58ffbf7.webp",
+            "logo_name": "Navdeep"
+          }
+        },
+        "6426f1e5-3766-441f-bf09-ca52e5edcf42": {
+          "type": "Head",
+          "settings": {
+            "google_slider_logo": "shopify:\/\/shop_images\/l1.webp",
+            "reviews_slider_logo": "shopify:\/\/shop_images\/s1_77c87a16-5e46-4642-80ec-351df5e22e38.webp",
+            "color": "#1878b9",
+            "text": "2 week ago",
+            "card_text": "\"I feel much better after taking up the treatment. The treatment does not just include tablets and minoxidil. Treatment includes ensuring proper sleep cycle...\"",
+            "logo_image2": "shopify:\/\/shop_images\/6_2b6ce7d1-0d5d-480d-858c-530b1b3a9492.webp",
+            "logo_name": "Sarveshvara"
+          }
+        },
+        "93e41915-176e-4d2d-adcd-4196fa52a4ce": {
+          "type": "Head",
+          "settings": {
+            "google_slider_logo": "shopify:\/\/shop_images\/l1.webp",
+            "reviews_slider_logo": "shopify:\/\/shop_images\/s1_77c87a16-5e46-4642-80ec-351df5e22e38.webp",
+            "color": "#1878b9",
+            "text": "4 week ago",
+            "card_text": "I'm a 23 year old guy working in IT sector for past 3½ years. At 2020, I switched another company and started working multiple shifts on rotational...\"",
+            "logo_image2": "shopify:\/\/shop_images\/7_e87bfc2f-64b3-42f8-a872-877d25e318fa.webp",
+            "logo_name": "Karthikeyan A"
+          }
+        },
+        "ba33135a-1215-4ca9-91d7-9ce48ffbd1f7": {
+          "type": "Head",
+          "settings": {
+            "google_slider_logo": "shopify:\/\/shop_images\/l1.webp",
+            "reviews_slider_logo": "shopify:\/\/shop_images\/s1_77c87a16-5e46-4642-80ec-351df5e22e38.webp",
+            "color": "#1878b9",
+            "text": "A month ago",
+            "card_text": "I never seen any products like them. It is so so good. I suggest people to try. It js best u can do for ur health....",
+            "logo_image2": "shopify:\/\/shop_images\/8.webp",
+            "logo_name": "Angelina hale"
+          }
+        },
+        "b2eeb4d0-61f2-4aa9-a1b2-edcf6357d757": {
+          "type": "Head",
+          "settings": {
+            "google_slider_logo": "shopify:\/\/shop_images\/l1.webp",
+            "reviews_slider_logo": "shopify:\/\/shop_images\/s1_77c87a16-5e46-4642-80ec-351df5e22e38.webp",
+            "color": "#c02020",
+            "text": "A month ago",
+            "card_text": "\"Great Support By Traya Team And Specially Hair Coach Priya, she motivates to keep treatment on track and results are turning postive.........\"",
+            "logo_image2": "shopify:\/\/shop_images\/9.webp",
+            "logo_name": "sagar abbot"
+          }
+        }
+      },
+      "block_order": [
+        "a91ba271-16cd-48b6-8ce5-573eb902a367",
+        "d52b89db-9054-4983-bb95-77904705e559",
+        "99b5a013-b742-4f5c-b1bc-cd24320983f9",
+        "988bf381-b3aa-4031-bbb3-91a8901e584d",
+        "3b57e2b4-e257-4aec-a8ff-12059b877fe2",
+        "6426f1e5-3766-441f-bf09-ca52e5edcf42",
+        "93e41915-176e-4d2d-adcd-4196fa52a4ce",
+        "ba33135a-1215-4ca9-91d7-9ce48ffbd1f7",
+        "b2eeb4d0-61f2-4aa9-a1b2-edcf6357d757"
+      ],
+      "settings": {
+        "footer_linklist_title": "Google Reviews"
+      }
+    },
+    "1664439413275e4571": {
+      "type": "traya-home-three-foldway",
+      "disabled": true,
+      "settings": {
+        "text1": "<span class=\"ab\">TRAYA'S<\/span> Holistic Plan for Hairfall",
+        "mobile_text1": "<span class=\"ab\">TRAYA'S<\/span> Holistic Plan<br>for Hairfall",
+        "text2": "The Threefold Way",
+        "text3": "AYURVEDA + DERMATOLOGY + NUTRITION",
+        "text4": "Our approach combines the goodness of three sciences. With ingredients from the most authentic sources, we personalize your treatment delivering assured results."
+      }
+    },
+    "1663661640f28b80b8": {
+      "type": "traya_journey_section",
+      "blocks": {
+        "dc544742-2952-453a-94a4-dd5eb7611175": {
+          "type": "heder",
+          "settings": {
+            "step1_image": "shopify:\/\/shop_images\/m1-removebg-preview.png",
+            "page_link": "",
+            "step1_mobile_image": "shopify:\/\/shop_images\/m1-removebg-preview.png",
+            "steps_heading": "Take the hair test",
+            "steps-text": "An online test that assess the root cause of your hair fall & provides a treatment plan.",
+            "steps1": "Step 1",
+            "time": "(Takes 2-4 mins)"
+          }
+        },
+        "38dbd7a5-0cbb-4bfe-afc1-84a1392f5537": {
+          "type": "heder",
+          "settings": {
+            "step1_image": "shopify:\/\/shop_images\/m2-removebg-preview.png",
+            "page_link": "",
+            "step1_mobile_image": "shopify:\/\/shop_images\/m2-removebg-preview.png",
+            "steps_heading": "Buy the Plan",
+            "steps-text": "Understand your hair fall and make the purchase to await doctor’s prescriptions.",
+            "steps1": "Step 2",
+            "time": "(Takes 5 mins)"
+          }
+        },
+        "381522bd-21a9-457a-821a-3c4d0a476afe": {
+          "type": "heder",
+          "settings": {
+            "step1_image": "shopify:\/\/shop_images\/m3-removebg-preview.png",
+            "page_link": "",
+            "step1_mobile_image": "shopify:\/\/shop_images\/m3-removebg-preview.png",
+            "steps_heading": "Start hair growth",
+            "steps-text": "A personal hair coach guides you throughout the journey.",
+            "steps1": "Step 3",
+            "time": "(Takes 5-6 months)"
+          }
+        }
+      },
+      "block_order": [
+        "dc544742-2952-453a-94a4-dd5eb7611175",
+        "38dbd7a5-0cbb-4bfe-afc1-84a1392f5537",
+        "381522bd-21a9-457a-821a-3c4d0a476afe"
+      ],
+      "settings": {
+        "section-title": "The Traya Journey",
+        "regrow_text": "Regrow Your Hair With A Personal Hair Coach",
+        "button_text": "TAKE THE HAIR TEST",
+        "button_link": "https:\/\/form.traya.health\/questions?cohort=1&location=TrayaJourney"
+      }
+    },
+    "d52a13d9-fc56-4847-a793-c4ad6ca8f491": {
+      "type": "future-of-safe-scientific",
+      "disabled": true,
+      "blocks": {
+        "0d0d3256-c1bb-487b-8b30-a919ccf83e5c": {
+          "type": "text",
+          "settings": {
+            "icon_logo": "shopify:\/\/shop_images\/1_b3b4c0c3-aa53-414b-a739-bc493c8b725e.webp",
+            "future_icon_text": "Non Toxic"
+          }
+        },
+        "a2a6912f-9f29-4315-a816-d19731b42312": {
+          "type": "text",
+          "settings": {
+            "icon_logo": "shopify:\/\/shop_images\/2_d368c918-a5ce-471c-ae64-3261d635ce14.webp",
+            "future_icon_text": "Made Safe"
+          }
+        },
+        "13075104-5036-4715-a05c-51f6b523e12c": {
+          "type": "text",
+          "settings": {
+            "icon_logo": "shopify:\/\/shop_images\/3.png",
+            "future_icon_text": "Cruetly Free"
+          }
+        },
+        "633e9b8f-5b4a-4677-8221-ba200c90a76b": {
+          "type": "text",
+          "settings": {
+            "icon_logo": "shopify:\/\/shop_images\/4-removebg-preview_9d5a0362-ccce-4c7c-96b3-f55633a5c87f.png",
+            "future_icon_text": "Vegan Friendly"
+          }
+        },
+        "5a48cdd8-3b83-4d6f-a93f-201d7f43433e": {
+          "type": "text",
+          "settings": {
+            "icon_logo": "shopify:\/\/shop_images\/5-removebg-preview_ca3720bc-91b5-42f9-999d-ccf009c5ee4a.png",
+            "future_icon_text": "Allergy Free"
+          }
+        },
+        "c2cd82b7-d8e3-4897-9268-743cb816a9f7": {
+          "type": "text",
+          "settings": {
+            "icon_logo": "shopify:\/\/shop_images\/6_40376d3b-bead-459a-b375-0ba878ab9a51.webp",
+            "future_icon_text": "Doctor Prescribed"
+          }
+        }
+      },
+      "block_order": [
+        "0d0d3256-c1bb-487b-8b30-a919ccf83e5c",
+        "a2a6912f-9f29-4315-a816-d19731b42312",
+        "13075104-5036-4715-a05c-51f6b523e12c",
+        "633e9b8f-5b4a-4677-8221-ba200c90a76b",
+        "5a48cdd8-3b83-4d6f-a93f-201d7f43433e",
+        "c2cd82b7-d8e3-4897-9268-743cb816a9f7"
+      ],
+      "settings": {
+        "section-heading": "Future Of Safe & Effective Hair Care",
+        "mobile_section_heading": "Future Of Safe &<br>Effective Hair Care",
+        "banner_image": "shopify:\/\/shop_images\/fdsfds_1600x_d73eadcd-e19b-4f5a-ae47-e817a9911d81.webp",
+        "mobile_banner_image": "shopify:\/\/shop_images\/mobile_c3ed2e83-b9b2-48fb-ae1b-ec036609055f.webp"
+      }
+    },
+    "97253f4d-a1b6-46a0-80f4-7b9dcf2fe9b5": {
+      "type": "traya_section_banner",
+      "disabled": true,
+      "settings": {
+        "des_img": "shopify:\/\/shop_images\/min1.webp",
+        "mob_img": "shopify:\/\/shop_images\/mobile-min2.webp",
+        "traya_white_image": "shopify:\/\/shop_images\/TrayaLogoWhite_250x_84c0b96a-6d04-4828-81bd-572b7fa302fc.webp",
+        "paragraph1": "2x2 REGIMEN",
+        "paragraph2": "2min twice a day",
+        "paragraph3": "Follow a simple daily routine. Start <br>seeing the difference in under 30 days.",
+        "button_text": "TAKE THE HAIR TEST",
+        "button_link": "https:\/\/form.traya.health\/questions?cohort=1&location=theScience",
+        "mobile_button_text": "TAKE THE HAIR TEST",
+        "mobile_button_link": "https:\/\/form.traya.health\/questions?cohort=1&location=theScience"
+      }
+    },
+    "1663916516dd7fe84f": {
+      "type": "traya_cholesterol",
+      "disabled": true,
+      "blocks": {
+        "601ffb99-a10f-4094-baea-71280238ff42": {
+          "type": "Head",
+          "settings": {
+            "cholestrol_logo": "shopify:\/\/shop_images\/Vata_imbalance_large_6ce3d467-08c9-4fcf-a697-6add6e63cfe5.webp",
+            "font_title_child_heading": "Vata imbalance",
+            "chol-icon-img1": "shopify:\/\/shop_images\/Joint_pain_large_e82b214a-5e76-462a-85fa-b79d13c94fd7.webp",
+            "font_description_icon1": "Vata imbalance",
+            "chol-icon-img2": "shopify:\/\/shop_images\/Low_metabolism_large_62167b50-5ebe-468a-8468-b20335ab0300.webp",
+            "font_description_icon2": "Low metabolism",
+            "chol-icon-img3": "shopify:\/\/shop_images\/Disturbed_sleep_large_8aa01f99-dad6-408f-84e5-1052fdc25927.webp",
+            "font_description_icon3": "Disturbed sleep",
+            "chol-icon-img4": "shopify:\/\/shop_images\/Lack_of_focus_large_ace9f832-355b-4297-81f7-d568832e8b3b.webp",
+            "font_description_icon4": "Lack of focus",
+            "body_text": "#72614e"
+          }
+        },
+        "55d5801a-6718-4085-a101-102b78ceebf9": {
+          "type": "Head",
+          "settings": {
+            "cholestrol_logo": "shopify:\/\/shop_images\/Pitta_imbalance_large_88385482-4bb9-437a-9a3c-8f603b4100f1.webp",
+            "font_title_child_heading": "Pitta imbalance",
+            "chol-icon-img1": "shopify:\/\/shop_images\/p1_e4170056-4848-47c9-8d0c-6975ec9963ff.webp",
+            "font_description_icon1": "Hair loss",
+            "chol-icon-img2": "shopify:\/\/shop_images\/p2_1-removebg-preview.png",
+            "font_description_icon2": "Digestive problems",
+            "chol-icon-img3": "shopify:\/\/shop_images\/p3_8546469f-4572-41d4-b77c-703de3e221a1.webp",
+            "font_description_icon3": "Excessive thirst",
+            "chol-icon-img4": "shopify:\/\/shop_images\/p4.webp",
+            "font_description_icon4": "Short tempered",
+            "body_text": "#ffb10c"
+          }
+        },
+        "caf39906-cca5-4c45-aa51-51ac64c92940": {
+          "type": "Head",
+          "settings": {
+            "cholestrol_logo": "shopify:\/\/shop_images\/Kapha_imbalance_large_6ac8196a-4ae1-4b36-9388-e02f13d80329.webp",
+            "font_title_child_heading": "Kapha imbalance",
+            "chol-icon-img1": "shopify:\/\/shop_images\/k1.webp",
+            "font_description_icon1": "Low energy",
+            "chol-icon-img2": "shopify:\/\/shop_images\/k2.webp",
+            "font_description_icon2": "Loss of appetite",
+            "chol-icon-img3": "shopify:\/\/shop_images\/k3.webp",
+            "font_description_icon3": "Excessive sleeping",
+            "chol-icon-img4": "shopify:\/\/shop_images\/k4.webp",
+            "font_description_icon4": "Respiratory problems",
+            "body_text": "#5fb2c5"
+          }
+        }
+      },
+      "block_order": [
+        "601ffb99-a10f-4094-baea-71280238ff42",
+        "55d5801a-6718-4085-a101-102b78ceebf9",
+        "caf39906-cca5-4c45-aa51-51ac64c92940"
+      ],
+      "settings": {
+        "cholestrol_heading1": "Take The First Step",
+        "cholestrol_heading2": "Identify your metabolic type (dosha) to restore your metabolic health",
+        "footer_text": "Manage high cholesterol",
+        "button_link": "https:\/\/form.traya.health\/cholesterol-form",
+        "button_text": "Find your dosha"
+      }
+    },
+    "70fdfd6a-8f1e-4f65-b5e2-7a8ab2f739b5": {
+      "type": "accordian_content",
+      "blocks": {
+        "85b7cfcb-5b4a-44fb-bbf4-f2be40b174e0": {
+          "type": "heder",
+          "settings": {
+            "Question": "What is Java Script ?",
+            "paragraph": "JavaScript is a dynamic computer programming language.                          It is lightweight and most commonly used as a part of web pages,                         whose implementations allow client-side script to interact with the                          user and make dynamic pages."
+          }
+        },
+        "f8ac39c9-f222-46cc-828c-7fab3a7b470b": {
+          "type": "heder",
+          "settings": {
+            "Question": "What is Shopify ?",
+            "paragraph": "Shopify is an all-inclusive online selling platform and is a great                          option for small businesses of all sizes. For one monthly rate, businesses can create and                          develop an online store to promote, sell, and ship products."
+          }
+        },
+        "854779eb-4e70-4bc1-a6b8-083357549cb6": {
+          "type": "heder",
+          "settings": {
+            "Question": "What is Css?",
+            "paragraph": "Cascading Style Sheets allows you to create great-looking web pages,                          but how does it work under the hood? This article explains what CSS is with a simple syntax                          example and also covers some key terms about the language."
+          }
+        },
+        "a191bff4-844c-460d-be6b-599117329a6e": {
+          "type": "heder",
+          "settings": {
+            "Question": "Title",
+            "paragraph": "Title"
+          }
+        }
+      },
+      "block_order": [
+        "85b7cfcb-5b4a-44fb-bbf4-f2be40b174e0",
+        "f8ac39c9-f222-46cc-828c-7fab3a7b470b",
+        "854779eb-4e70-4bc1-a6b8-083357549cb6",
+        "a191bff4-844c-460d-be6b-599117329a6e"
+      ],
+      "settings": {
+      }
+    },
+    "2b4f6943-a625-4d97-887e-56b1b83c3954": {
+      "type": "select",
+      "disabled": true,
+      "settings": {
+        "para": "Customer Reviews",
+        "vertical_alignment": "left-top"
+      }
+    },
+    "b37fa0c5-d74c-4809-b109-4332df154983": {
+      "type": "traya_marquee",
+      "disabled": true,
+      "blocks": {
+        "2ef6b1e6-c22b-4e7b-bb80-98e74851905d": {
+          "type": "heder",
+          "settings": {
+            "images": "shopify:\/\/shop_images\/1_c5b50382-7d2f-47eb-be24-af8d3035bd8f.jpg"
+          }
+        },
+        "5ad0abad-8d4e-46da-8414-46ac41de0079": {
+          "type": "heder",
+          "settings": {
+            "images": "shopify:\/\/shop_images\/2.jpg"
+          }
+        },
+        "7ec52231-2778-4ddf-9594-c71f5f443e0a": {
+          "type": "heder",
+          "settings": {
+            "images": "shopify:\/\/shop_images\/3_b9990959-6585-449f-a32c-61558a0a28e0.jpg"
+          }
+        },
+        "9c89c537-5880-4f61-8dbe-46ad69baab59": {
+          "type": "heder",
+          "settings": {
+            "images": "shopify:\/\/shop_images\/4_e5fdb84e-041e-49db-be32-49d283ebd95f.jpg"
+          }
+        },
+        "e73f6b97-14ea-4947-9d67-070a5a0110e4": {
+          "type": "heder",
+          "settings": {
+            "images": "shopify:\/\/shop_images\/7.jpg"
+          }
+        },
+        "33b3c67a-7a44-450b-8a71-8605639c17f4": {
+          "type": "heder",
+          "settings": {
+            "images": "shopify:\/\/shop_images\/6_0ff01906-50ff-49f5-8378-5bbda0484d35.webp"
+          }
+        },
+        "5124e032-c1c8-4c66-84de-581ef8fd3b31": {
+          "type": "heder",
+          "settings": {
+            "images": "shopify:\/\/shop_images\/9.jpg"
+          }
+        },
+        "60906c8f-6ad6-47b2-ac90-e6512c2f9276": {
+          "type": "heder",
+          "settings": {
+            "images": "shopify:\/\/shop_images\/8_1.jpg"
+          }
+        },
+        "edaf2594-e7a2-4767-8106-a1265302a095": {
+          "type": "heder",
+          "settings": {
+            "images": "shopify:\/\/shop_images\/7.jpg"
+          }
+        },
+        "df4a51af-6158-489c-bafe-18a8f5db7c3d": {
+          "type": "heder",
+          "settings": {
+            "images": "shopify:\/\/shop_images\/4_e5fdb84e-041e-49db-be32-49d283ebd95f.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "2ef6b1e6-c22b-4e7b-bb80-98e74851905d",
+        "5ad0abad-8d4e-46da-8414-46ac41de0079",
+        "7ec52231-2778-4ddf-9594-c71f5f443e0a",
+        "9c89c537-5880-4f61-8dbe-46ad69baab59",
+        "e73f6b97-14ea-4947-9d67-070a5a0110e4",
+        "33b3c67a-7a44-450b-8a71-8605639c17f4",
+        "5124e032-c1c8-4c66-84de-581ef8fd3b31",
+        "60906c8f-6ad6-47b2-ac90-e6512c2f9276",
+        "edaf2594-e7a2-4767-8106-a1265302a095",
+        "df4a51af-6158-489c-bafe-18a8f5db7c3d"
+      ],
+      "settings": {
+      }
+    },
+    "3f95175e-dc02-42c9-bae5-b97ac5342885": {
+      "type": "faq-with-image",
+      "disabled": true,
+      "blocks": {
+        "4179b2a1-2e7d-4468-aa28-3d85612580fe": {
+          "type": "head",
+          "settings": {
+            "ques": "Controls Hair Fall",
+            "ans": "This special formula helps nourish your follicles internally by strengthening them with an increased flow of oxygen and nutrient rich blood."
+          }
+        },
+        "974b0743-70e9-4f6d-a826-1da4aea3fbfa": {
+          "type": "head",
+          "settings": {
+            "ques": "Balances Pitta Dosha",
+            "ans": "Ayurvedic beliefs suggest that an increase in pitta dosha can deteriorate scalp health and aggravate hair loss. This herb mix reduces the pitta levels in your body to improve your hair health."
+          }
+        },
+        "1fe44000-da94-4832-98e9-c2d0b7276719": {
+          "type": "head",
+          "settings": {
+            "ques": "Maintains Hormonal Health",
+            "ans": "Inadequate sleep, diet and lifestyle can cause an imbalance of hormones. The adaptogenic herbs such as shatavari and ashwagandha help restore that."
+          }
+        },
+        "153bcb29-c890-447b-9fca-4aaf56c29ef7": {
+          "type": "head",
+          "settings": {
+            "ques": "Rejuvenates Hair Follicles",
+            "ans": "Follicles can weaken due to poor blood flow and increased pitta (heat) in the body and thus affect the health of your hair. The herbs in this formula revive those unhealthy follicles."
+          }
+        }
+      },
+      "block_order": [
+        "4179b2a1-2e7d-4468-aa28-3d85612580fe",
+        "974b0743-70e9-4f6d-a826-1da4aea3fbfa",
+        "1fe44000-da94-4832-98e9-c2d0b7276719",
+        "153bcb29-c890-447b-9fca-4aaf56c29ef7"
+      ],
+      "settings": {
+        "acc_images": "shopify:\/\/shop_images\/faq-image.webp"
+      }
+    },
+    "d9bedb4c-554e-471d-8722-a40a06637780": {
+      "type": "2X2-min",
+      "disabled": true,
+      "settings": {
+        "sub_heading": "TRAYA 2X2 REGIMEN",
+        "min_sub_heading": "<h2>\n<strong class=\"d-block\">2min<\/strong>twice a day<\/h2>",
+        "content": "Follow a simple daily routine. Start seeing the difference in under 30 days.",
+        "section_image": "shopify:\/\/shop_images\/2x2.webp",
+        "mobile_image": "shopify:\/\/shop_images\/mobile_a9ebbfb5-4b74-4fc2-a184-a2062498f436.webp",
+        "btn_text": "THE SCIENCE",
+        "button_link": "https:\/\/form.traya.health\/questions?cohort=1&location=HomeSlideshow&page=home"
+      }
+    },
+    "7dbcd795-8cb5-4060-93ba-285e182aeb06": {
+      "type": "video-player-section",
+      "settings": {
+        "section_title": "How we create our delicious Läderach Chocolate?",
+        "videofile": "",
+        "video-url": "https:\/\/player.vimeo.com\/video\/366968248?title=0&amp;byline=0&amp;portrait=0"
+      }
+    },
+    "16606470766766539e": {
+      "type": "collapsible-content",
+      "blocks": {
+        "1660647076cb1b8c82-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "lightning_bolt",
+            "row_content": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus<\/p>",
+            "page": ""
+          }
+        },
+        "1660647076cb1b8c82-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "leather",
+            "row_content": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus<\/p>",
+            "page": ""
+          }
+        },
+        "1660647076cb1b8c82-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "map_pin",
+            "row_content": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus<\/p>",
+            "page": ""
+          }
+        },
+        "1660647076cb1b8c82-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "clipboard",
+            "row_content": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus<\/p>",
+            "page": ""
+          }
+        },
+        "61b1377c-6ea1-4c25-8868-363f3dce41f3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "eye",
+            "row_content": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "1660647076cb1b8c82-0",
+        "1660647076cb1b8c82-1",
+        "1660647076cb1b8c82-2",
+        "1660647076cb1b8c82-3",
+        "61b1377c-6ea1-4c25-8868-363f3dce41f3"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Accordian Content",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "section",
+        "color_scheme": "background-2",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_first",
+        "padding_top": 36,
+        "padding_bottom": 80
+      }
+    },
+    "d189716e-c3e6-45b3-a32e-4469838d786d": {
+      "type": "ashiq",
+      "disabled": true,
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "featured-collection-0",
+    "166045231159df46e6",
+    "16604525631f1c4708",
+    "166045275283a925f5",
+    "multicolumn-0",
+    "featured-blog",
+    "newsletter",
+    "1660646909808a5ce9",
+    "1660806073f34cc761",
+    "16614936287e7b1bef",
+    "16629631559a87c8ed",
+    "1664439413275e4571",
+    "1663661640f28b80b8",
+    "d52a13d9-fc56-4847-a793-c4ad6ca8f491",
+    "97253f4d-a1b6-46a0-80f4-7b9dcf2fe9b5",
+    "1663916516dd7fe84f",
+    "70fdfd6a-8f1e-4f65-b5e2-7a8ab2f739b5",
+    "2b4f6943-a625-4d97-887e-56b1b83c3954",
+    "b37fa0c5-d74c-4809-b109-4332df154983",
+    "3f95175e-dc02-42c9-bae5-b97ac5342885",
+    "d9bedb4c-554e-471d-8722-a40a06637780",
+    "7dbcd795-8cb5-4060-93ba-285e182aeb06",
+    "16606470766766539e",
+    "d189716e-c3e6-45b3-a32e-4469838d786d"
+  ]
+}

@@ -1,0 +1,128 @@
+
+<!--select.liquid-->
+
+<div class="option">
+  <div class="text alignment_{{ section.settings.vertical_alignment }}">
+    <p class="paragraph">
+      {{ section.settings.para }}
+    </p> 
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Second_transplant",
+    "settings": [
+     
+      {
+   "type": "text",
+   "id": "para",
+   "label": "Enter your text"
+      },
+      {
+      "type": "select",
+      "id": "vertical_alignment",
+      "label": "Vertical alignment",
+  "options": [
+    {
+      "value": "left",
+      "label": "Left"
+    },
+    {
+      "value": "middle",
+      "label": "Middle"
+    },
+    {
+      "value": "right",
+      "label": "Right"
+    },
+    {
+      "value": "center",
+      "label": "Center"
+    },
+     {
+      "value": "left-top",
+      "label": "Left-top"
+    },
+     {
+      "value": "middle-top",
+      "label": "Middle-top"
+    },
+    {
+      "value": "middle-right",
+      "label": "Middle-right"
+    },
+     {
+      "value": "middle-bottom",
+      "label": "Middle-bottom"
+    },
+     {
+      "value": "bottom-left",
+      "label": "Bottom-left"
+    },
+     {
+      "value": "bottom-right",
+      "label": "Bottom-right"
+    }
+  ],
+  "default": "middle"
+  }
+
+  ],
+
+    "presets": [
+    {
+      "name": "Select Option",
+      "category": "Add traya transplant"
+    }
+  ] 
+  }
+{% endschema %}
+
+<style>
+  .paragraph{
+    font-size:30px;
+    color:red;
+  .option{
+    position:relative;
+  }
+  .option .text{
+    position: absolute;
+  }
+  .alignment_middle{
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+  }
+  .alignment_left{top:50%;}
+  .alignment_right{
+    top:50%;
+    right:0%;
+  }
+  .alignment_left-top{
+    top:0%;
+    left:0px;
+  }
+.alignment_middle-top{
+  top:0%;
+   left:50%;
+  transform:translate(-50%, -50%);
+}
+.alignment_middle-right{
+  top:0%;
+  right:0%;
+}
+.alignment_bottom-left{
+  bottom:0%;
+  left:0%;
+} 
+.alignment_middle-bottom{
+  bottom:0%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  
+}
+.alignment_bottom-right{
+  bottom:0%;
+  right:0%;
+}
+</style>

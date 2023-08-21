@@ -1,0 +1,88 @@
+<div class="container">
+  {% for block in section.blocks %}
+    <div class="image-box">
+      <div class="image">
+        <img src="{{ block.settings.logo_image | img_url:' '}}"/>
+      </div>
+      <div class="para">
+        {{ block.settings.content }}
+      </div>
+    </div>
+  {% endfor %}
+</div>
+{% schema %}
+  {
+    "name": "image-box",
+    "settings": [],
+    
+  "blocks": [
+    {
+      "type": "Head",
+      "name": "image-box",
+      "limit": 6,
+      "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo_image",
+      "label": "Logo image"
+    },
+    {
+      "type": "text",
+      "id": "content",
+      "label": "Heading",
+      "default": "Content"
+      }
+    ]
+  }
+],
+  "presets":[
+              {
+                "name":"image-box",
+                "category":"custom"
+              }
+            ]
+}
+{% endschema %}
+<style>
+	*{
+		margin:0;
+		padding:0;
+	}
+	.container{
+		width:90%;
+		margin:0 auto;
+		display:flex;
+		flex-wrap:wrap;
+		text-align:center;
+		background:red;
+	}
+	.image-box{
+		width:45%;
+		padding:10px;
+		position:relative;
+	}
+	.image-box img{
+		width:100%;
+	}
+	.para{
+		position: absolute;
+		top: 40%;
+		padding:20px;
+		font-size:16px;
+	}
+	@media only screen and ( max-width:760px ){
+	.container{
+		display:block;
+		width:100%;
+	}  
+	.image-box img{
+		width:100%;
+		height:auto;
+	}
+	.para{
+		font-size:14px;
+		text-align:center;
+		top:10%;
+	}
+}
+</style>

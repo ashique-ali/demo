@@ -1,0 +1,83 @@
+<section class="bg-white">
+  <div class="page-width overflow-hidden marqueeMain">
+    <div class="marquee mt-4 mt-md-5 pb-4">
+      <div class="marquee-content align-items-center"> 
+        {% for block in section.blocks %}
+          <div class="marquee-item">
+            <img src="{{ block.settings.images | img_url:'' }}"/>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+{% schema %}
+  {
+    "name": "Marquee",
+    "settings": [],
+      "blocks":[
+      {
+        "type":"heder",
+        "name":"Marquee-slider",
+        "settings":[
+        {
+          "type": "image_picker",
+          "id": "images",
+          "label": "Logo image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+                {
+                  "name":"Marquee-slider",
+                  "category":"custom"
+                }
+            ]
+    
+  }
+{% endschema %}
+
+<style>
+  <style>
+* {
+    box-sizing: border-box;
+    background:#fff;
+  }
+  .marquee-content{
+    display: flex;
+    animation: scrolling 20s linear infinite;
+  }
+  .marquee-item{
+    flex: 0 0 13vw;
+    margin: 0 1vw;
+  }
+  .marquee-item img{
+    display: block;
+    width: 100%;
+  }
+  @keyframes scrolling{
+    0% { transform: translateX(0); }
+    100% { transform: translatex(-144vw); }
+  }
+  @media only screen and (min-width: 767px){
+    .marqueeMain{
+      border-bottom: 1px solid rgb(64 211 185 / 30%);
+    }
+    .marquee-item img{
+      width: 160px;
+    }
+  }
+  @media only screen and (max-width: 767px){
+    .marquee-item{
+      flex: 0 0 40%;
+    }
+    .marquee{
+      overflow: hidden;
+      border-bottom: 1px solid rgb(64 211 185 / 30%);
+    }
+    .marquee-item img{
+      width: 115px;
+    }
+  }
+</style>
